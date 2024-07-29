@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cedro User Profile">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/styles/style.css">
     <script type="module" src="assets/scripts/main.js"></script>
@@ -15,14 +16,14 @@
         type="font/woff2"
         href="./fonts/roboto-v30-latin-regular.woff2"
         crossorigin
-    />
+    >
     <link
         rel="preload"
         as="font"
         type="font/woff2"
         href="./fonts/roboto-v30-latin-500.woff2"
         crossorigin
-    />
+    >
 
     <title>Cedro User Profile</title>
 </head>
@@ -35,7 +36,7 @@
                     <img class="logo" src="/images/logo.svg" width="91" alt="Cedro Logo">
                 </a>
 
-                <a class="nav__link nav__link_phone" href="tel:+7800553535">
+                <a class="nav__link nav__link_phone" href="tel:+7800553535" aria-label="Phone">
                     <svg viewBox="0 0 24 24" width="24" height="24">
                         <use href="icons/icons-set.svg#phone"></use>
                     </svg>
@@ -45,7 +46,7 @@
 
                 <ul class="nav__panel">
                     <li>
-                        <a class="nav__link" href="#">
+                        <a class="nav__link" href="#" aria-label="Wish List">
                             <svg viewBox="0 0 24 24" width="24" height="24">
                                 <use href="icons/icons-set.svg#wish"></use>
                             </svg>
@@ -57,7 +58,7 @@
                     </li>
 
                     <li>
-                        <a class="nav__link" href="#">
+                        <a class="nav__link" href="#" aria-label="User Profile">
                             <svg viewBox="0 0 24 24" width="24" height="24">
                                 <use href="icons/icons-set.svg#profile"></use>
                             </svg>
@@ -65,7 +66,7 @@
                     </li>
                 </ul>
 
-                <button class="nav__menu-button" data-id="menu-button"> </button>
+                <button class="nav__menu-button" data-id="menu-button" aria-label="Menu"></button>
             </nav>
         </div> <!-- end of div class="wrapper" -->
     </header> <!-- end of header class="header" -->
@@ -104,7 +105,8 @@
                         type="text"
                         name="name"
                         id="name"
-                        placeholder="Имя">
+                        placeholder="Имя"
+                    >
                 </div>
 
                 <div class="profile__form-item">
@@ -114,7 +116,8 @@
                         type="email"
                         name="email"
                         id="email"
-                        placeholder="Email">
+                        placeholder="Email"
+                    >
                 </div>
 
                 <div class="profile__form-item">
@@ -124,7 +127,8 @@
                         type="tel"
                         name="phone"
                         id="phone"
-                        placeholder="Номер телефона">
+                        placeholder="Номер телефона"
+                    >
                 </div>
             </form>
 
