@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link
+        rel="preload"
+        as="font"
+        type="font/woff2"
+        href="./fonts/roboto-v30-latin-regular.woff2"
+        crossorigin
+    />
+    <link
+        rel="preload"
+        as="font"
+        type="font/woff2"
+        href="./fonts/roboto-v30-latin-500.woff2"
+        crossorigin
+    />
+
+    <title>Cedro User Profile</title>
+  <script type="module" crossorigin src="/assets/index-Npu5lYCb.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-oi2aKpdM.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <nav class="nav">
+                <a class="header__logo" href="#">
+                    <img class="logo" src="/images/logo.svg" width="91" alt="Cedro Logo">
+                </a>
+
+                <a class="nav__link nav__link_phone" href="tel:+7800553535">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="icons/icons-set.svg#phone"></use>
+                    </svg>
+
+                    <span class="nav__link-phone-number"> 8 (800) 555-35-35 </span>
+                </a>
+
+                <ul class="nav__panel">
+                    <li>
+                        <a class="nav__link" href="#">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="icons/icons-set.svg#wish"></use>
+                            </svg>
+
+                            <span class="nav__total-wished">
+                                <span class="nav__wished-counter" data-id="total-fav" hidden></span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav__link" href="#">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="icons/icons-set.svg#profile"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="nav__menu-button" data-id="menu-button"> </button>
+            </nav>
+        </div> <!-- end of div class="wrapper" -->
+    </header> <!-- end of header class="header" -->
+
+    <main class="main">
+        <nav class="sidebar">
+            <ul class="sidebar__menu" role="menu">
+                <li class="sidebar__link active" role="menuitem">
+                    <a href="#"> Профиль </a>
+                </li>
+
+                <li class="sidebar__link" role="menuitem">
+                    <a href="#"> Мои заказы </a>
+                </li>
+
+                <li class="sidebar__link" role="menuitem">
+                    <a href="#"> Выход </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="profile">
+            <header class="profile__header">
+                <h1 class="profile__title"> Профиль </h1>
+            </header>
+
+            <form class="profile__form" id="profile-form">
+                <h3 class="profile__form-title">
+                    Данные профиля
+                </h3>
+
+                <div class="profile__form-item">
+                    <label class="profile__form-label" for="name"> ФИО </label>
+                    <input
+                        class="profile__form-input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Имя">
+                </div>
+
+                <div class="profile__form-item">
+                    <label class="profile__form-label" for="email"> Почта </label>
+                    <input
+                        class="profile__form-input"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email">
+                </div>
+
+                <div class="profile__form-item">
+                    <label class="profile__form-label" for="phone"> Телефон </label>
+                    <input
+                        class="profile__form-input"
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        placeholder="Номер телефона">
+                </div>
+            </form>
+
+            <div class="profile__form-controls">
+                <button
+                    class="button profile__form-submit"
+                    type="submit"
+                    form="profile-form"
+                    data-id="form-button"
+                >
+                    Сохранить изменения
+                </button>
+            </div>
+        </section> <!-- end of section class="profile" -->
+    </main> <!-- end of main class="main" -->
+
+    <aside class="trends">
+        <div class="slider-container">
+            <h2 class="trends__title">
+                <span class="accent-text"> Тренды </span> сезона
+            </h2>
+
+            <a href="#!" class="trends__link">
+                Перейти в каталог
+
+                <svg viewBox="0 0 17 16" width="17" height="16">
+                    <use href="icons/icons-set.svg#right-arrow"></use>
+                </svg>
+            </a>
+
+            <div class="trends__slider" data-id="slider-div">
+
+            </div>
+        </div>
+    </aside>
+
+    <dialog class="menu-modal" data-id="menu-modal">
+        <div class="wrapper">
+            <header class="menu-modal__header">
+                <a class="header__logo" href="#">
+                    <img class="logo" src="/images/logo.svg" width="91" alt="Cedro Logo">
+                </a>
+
+                <button class="close-button" data-id="close-button">
+                    <svg width="24" height="24">
+                        <use href="icons/icons-set.svg#cross"></use>
+                    </svg>
+                </button>
+            </header>
+
+            <nav class="menu">
+                <div class="menu__column">
+                    <h3 class="menu__title"> Продукция </h3>
+                    <ul class="menu__items" role="menu">
+                        <li class="menu__item" role="menuitem">
+                            <a href="#" class="menu__link"> Пигменты </a>
+                        </li>
+                        <li class="menu__item" role="menuitem">
+                            <a href="#" class="menu__link"> Пигменты </a>
+                        </li>
+                        <li class="menu__item" role="menuitem">
+                            <a href="#" class="menu__link"> Аппараты </a>
+                        </li>
+                        <li class="menu__item" role="menuitem">
+                            <a href="#" class="menu__link"> Иглы </a>
+                        </li>
+                        <li class="menu__item" role="menuitem">
+                            <a href="#" class="menu__link"> Расходные материалы </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu__column">
+                    <h3 class="menu__title"> Компания </h3>
+                    <ul class="menu__items" role="menu">
+                        <li class="menu__item" role="menuitem">
+                            <a href="#" class="menu__link"> Блог </a>
+                        </li>
+                        <li class="menu__item" role="menuitem">
+                            <a href="#" class="menu__link"> Обучение </a>
+                        </li>
+                        <li class="menu__item" role="menuitem">
+                            <a href="#" class="menu__link"> Стать представителем </a>
+                        </li>
+                        <li class="menu__item" role="menuitem">
+                            <a href="#" class="menu__link"> Контакты </a>
+                        </li>
+                        <li class="menu__item" role="menuitem">
+                            <a href="#" class="menu__link"> Политика конфиденциальности </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> <!-- end of nav class="menu" -->
+        </div> <!-- end of div class="wrapper" -->
+    </dialog> <!-- end of dialog class="menu-modal" -->
+</body>
+
+</html>
