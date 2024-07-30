@@ -80,7 +80,7 @@ const demoData = [
         "volume": "12 ml.",
         "oldPrice": "1 500",
         "newPrice": "3 000",
-        "promo": "🍋",
+        "promo": "🦊",
         "color": "#C08D74",
     },
     {
