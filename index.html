@@ -33,15 +33,24 @@
         <div class="wrapper">
             <nav class="nav">
                 <a class="header__logo" href="#">
-                    <img class="logo" src="/images/logo.svg" width="91" alt="Cedro Logo">
+                    <img
+                        class="logo"
+                        src="images/logo.svg"
+                        width="91"
+                        alt="Logo"
+                    >
                 </a>
 
-                <a class="nav__link nav__link_phone" href="tel:+7800553535" aria-label="Phone">
+                <a
+                    class="nav__link nav__link_phone"
+                    href="tel:+7800553535"
+                    aria-label="Phone"
+                >
                     <svg viewBox="0 0 24 24" width="24" height="24">
                         <use href="icons/icons-set.svg#phone"></use>
                     </svg>
 
-                    <span class="nav__link-phone-number"> 8 (800) 555-35-35 </span>
+                    <span class="nav__link-phone-number">8 800 555-35-35</span>
                 </a>
 
                 <ul class="nav__panel">
@@ -52,7 +61,11 @@
                             </svg>
 
                             <span class="nav__total-wished">
-                                <span class="nav__wished-counter" data-id="total-fav" hidden></span>
+                                <span
+                                    class="nav__wished-counter"
+                                    data-id="total-fav"
+                                    hidden
+                                ></span>
                             </span>
                         </a>
                     </li>
@@ -66,7 +79,11 @@
                     </li>
                 </ul>
 
-                <button class="nav__menu-button" data-id="menu-button" aria-label="Menu"></button>
+                <button
+                    class="nav__menu-button"
+                    data-id="menu-button"
+                    aria-label="Menu"
+                ></button>
             </nav>
         </div> <!-- end of div class="wrapper" -->
     </header> <!-- end of header class="header" -->
@@ -75,22 +92,22 @@
         <nav class="sidebar">
             <ul class="sidebar__menu" role="menu">
                 <li class="sidebar__link active" role="menuitem">
-                    <a href="#"> Профиль </a>
+                    <a href="#">Профиль</a>
                 </li>
 
                 <li class="sidebar__link" role="menuitem">
-                    <a href="#"> Мои заказы </a>
+                    <a href="#">Мои заказы</a>
                 </li>
 
                 <li class="sidebar__link" role="menuitem">
-                    <a href="#"> Выход </a>
+                    <a href="#">Выход</a>
                 </li>
             </ul>
         </nav>
 
         <section class="profile">
             <header class="profile__header">
-                <h1 class="profile__title"> Профиль </h1>
+                <h1 class="profile__title">Профиль</h1>
             </header>
 
             <form class="profile__form" id="profile-form">
@@ -99,7 +116,9 @@
                 </h3>
 
                 <div class="profile__form-item">
-                    <label class="profile__form-label" for="name"> ФИО </label>
+                    <label class="profile__form-label" for="name">
+                        ФИО
+                    </label>
                     <input
                         class="profile__form-input"
                         type="text"
@@ -110,7 +129,9 @@
                 </div>
 
                 <div class="profile__form-item">
-                    <label class="profile__form-label" for="email"> Почта </label>
+                    <label class="profile__form-label" for="email">
+                        Почта
+                    </label>
                     <input
                         class="profile__form-input"
                         type="email"
@@ -121,7 +142,9 @@
                 </div>
 
                 <div class="profile__form-item">
-                    <label class="profile__form-label" for="phone"> Телефон </label>
+                    <label class="profile__form-label" for="phone">
+                        Телефон
+                    </label>
                     <input
                         class="profile__form-input"
                         type="tel"
@@ -146,24 +169,22 @@
     </main> <!-- end of main class="main" -->
 
     <aside class="trends">
-        <div class="wrapper">
-            <div class="slider-container">
-                <h2 class="trends__title">
-                    <span class="accent-text"> Тренды </span> сезона
-                </h2>
+        <div class="trends__header">
+            <h2 class="trends__title">
+                <span class="accent-text">Тренды</span> сезона
+            </h2>
 
-                <a href="#!" class="trends__link">
-                    Перейти в каталог
+            <a href="#!" class="trends__link">
+                Перейти в каталог
 
-                    <svg viewBox="0 0 17 16" width="17" height="16">
-                        <use href="icons/icons-set.svg#right-arrow"></use>
-                    </svg>
-                </a>
+                <svg viewBox="0 0 17 16" width="17" height="16">
+                    <use href="icons/icons-set.svg#right-arrow"></use>
+                </svg>
+            </a>
+        </div>
 
-                <div class="trends__slider" data-id="slider-div">
+        <div class="trends__slider" data-id="slider-div">
 
-                </div>
-            </div>
         </div>
     </aside>
 
@@ -171,10 +192,19 @@
         <div class="wrapper">
             <header class="menu-modal__header">
                 <a class="header__logo" href="#">
-                    <img class="logo" src="/images/logo.svg" width="91" alt="Cedro Logo">
+                    <img
+                        class="logo"
+                        src="images/logo.svg"
+                        width="91"
+                        alt="Logo"
+                    >
                 </a>
 
-                <button class="close-button" data-id="close-button">
+                <button
+                    class="close-button"
+                    data-id="close-button"
+                    aria-label="Close"
+                >
                     <svg width="24" height="24">
                         <use href="icons/icons-set.svg#cross"></use>
                     </svg>
@@ -183,43 +213,49 @@
 
             <nav class="menu">
                 <div class="menu__column">
-                    <h3 class="menu__title"> Продукция </h3>
+                    <h3 class="menu__title">Продукция</h3>
                     <ul class="menu__items" role="menu">
                         <li class="menu__item" role="menuitem">
-                            <a href="#" class="menu__link"> Пигменты </a>
+                            <a href="#" class="menu__link">Пигменты</a>
                         </li>
                         <li class="menu__item" role="menuitem">
-                            <a href="#" class="menu__link"> Пигменты </a>
+                            <a href="#" class="menu__link">Пигменты</a>
                         </li>
                         <li class="menu__item" role="menuitem">
-                            <a href="#" class="menu__link"> Аппараты </a>
+                            <a href="#" class="menu__link">Аппараты</a>
                         </li>
                         <li class="menu__item" role="menuitem">
-                            <a href="#" class="menu__link"> Иглы </a>
+                            <a href="#" class="menu__link">Иглы</a>
                         </li>
                         <li class="menu__item" role="menuitem">
-                            <a href="#" class="menu__link"> Расходные материалы </a>
+                            <a href="#" class="menu__link">
+                                Расходные материалы
+                            </a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="menu__column">
-                    <h3 class="menu__title"> Компания </h3>
+                    <h3 class="menu__title">Компания</h3>
                     <ul class="menu__items" role="menu">
                         <li class="menu__item" role="menuitem">
-                            <a href="#" class="menu__link"> Блог </a>
+                            <a href="#" class="menu__link">Блог</a>
                         </li>
                         <li class="menu__item" role="menuitem">
-                            <a href="#" class="menu__link"> Обучение </a>
+                            <a href="#" class="menu__link">Обучение</a>
                         </li>
                         <li class="menu__item" role="menuitem">
-                            <a href="#" class="menu__link"> Стать представителем </a>
+                            <a href="#" class="menu__link">
+                                Стать представителем
+                            </a>
                         </li>
                         <li class="menu__item" role="menuitem">
-                            <a href="#" class="menu__link"> Контакты </a>
+                            <a href="#" class="menu__link">Контакты</a>
                         </li>
                         <li class="menu__item" role="menuitem">
-                            <a href="#" class="menu__link"> Политика конфиденциальности </a>
+                            <a href="#" class="menu__link">
+                                Политика конфиденциальности
+                            </a>
                         </li>
                     </ul>
                 </div>
